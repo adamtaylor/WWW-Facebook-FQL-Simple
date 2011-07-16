@@ -1,0 +1,4 @@
+*.swp
+/{{$dist->name}}*
+.build
+WWW-Facebook*
