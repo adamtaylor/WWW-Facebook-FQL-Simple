@@ -16,7 +16,7 @@ does not handle sessions or authentication so presumably some requests will not
 work.
 
 If your needs are more complex, you probably need L<WWW::Facebook::API> or
-L<WWWW::Facebook::FQL>.
+L<WWW::Facebook::FQL>.
 
 =head1 METHODS
 
