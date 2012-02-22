@@ -28,14 +28,15 @@ use warnings;
 use JSON;
 use LWP::UserAgent;
 use URI::Encode qw( uri_encode );
+use Carp qw/croak/;
 
 my $API_BASE = 'http://api.facebook.com/method/fql.query?format=json&query=';
 
 =head2 query
 
-    WWW::Facebook::FQL::Simple->query(
+    WWW::Facebook::FQL::Simple->query({
         query => 'SELECT like_count FROM link_stat WHERE url="http://twitter.com"'
-    );
+    });
 
 Returns a hash reference of the JSON returned from the API.
 
@@ -55,7 +56,7 @@ sub query {
         return decode_json $response->content;
     }
     else {
-        die $response->status_line;
+        croak $response->status_line;
     }
 
 }
