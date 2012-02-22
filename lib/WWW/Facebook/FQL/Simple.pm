@@ -11,7 +11,7 @@ package WWW::Facebook::FQL::Simple;
 
 =head1 DESCRIPTION
 
-A no nonesense, dead simple interface to for making FQL requests. This module
+A no nonesense, dead simple interface for making FQL requests. This module
 does not handle sessions or authentication so presumably some requests will not
 work.
 
