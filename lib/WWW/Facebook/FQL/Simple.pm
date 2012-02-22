@@ -5,9 +5,9 @@ package WWW::Facebook::FQL::Simple;
 
     use WWW::Facebook::FQL::Simple;
 
-    WWW::Facebook::FQL::Simple->query(
+    WWW::Facebook::FQL::Simple->query({
         query => 'SELECT like_count FROM link_stat WHERE url="http://twitter.com"'
-    );
+    });
 
 =head1 DESCRIPTION
 
